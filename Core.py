@@ -86,14 +86,17 @@ df['text'] = df['text'].apply(lambda x : correct_spellings(x))
 
 # Glove Representation
 
-def create_corpus(df):
-    corpus = []
-    for tweet_curr in tqdm(df['text']):
-        words = [word.lower() for word in word_tokenize(tweet_curr) if (word.isalpha() == 1)]
-        corpus.append(words)
-    return corpus
+#def create_corpus(df):
+#    corpus = []
+#    for tweet_curr in tqdm(df['text']):
+#        words = [word.lower() for word in word_tokenize(tweet_curr) if (word.isalpha() == 1)]
+#        corpus.append(words)
+#    return corpus
 
-corpus=create_corpus(df)
+#corpus=create_corpus(df)
+
+for i in tqdm(range(1000000)):
+    pass
 
 
 
